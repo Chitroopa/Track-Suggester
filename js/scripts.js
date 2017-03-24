@@ -32,12 +32,16 @@ $(document).ready(function() {
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui3"))))
         {
           alert ("ruby: easy to develop");
+          $(".notshow, #welcome").hide();
+          $(".rubytrack").show();
         }
         else {
           alert ("learn c#");
+          $(".notshow, #welcome").hide();
+          $(".notshow-result").show();
         }
       }
-      if ((learnInput === "learn1") || (learnInput === "learn1") )
+      if ((learnInput === "learn1") || (learnInput === "learn2") )
       {
         if (((interestInput === "interest2") && (workForInput === "workFor2") && (uiInput === "ui2")) ||
           ((interestInput === "interest3") && (workForInput === "workFor3") && (uiInput === "ui3")) ||

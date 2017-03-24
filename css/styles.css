@@ -1,3 +1,6 @@
 .notshow {
   display: none;
 }
+.notshow-result {
+  display: none;
+}

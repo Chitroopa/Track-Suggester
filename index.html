@@ -8,72 +8,82 @@
   <title>Track Suggestor</title>
 </head>
 <body>
+  <div class="container" id="welcome">
+    <h4>Welcome to Track sugesstor</h4>
+    <button type="button" class="btn btn-primary btn-lg" id="getStart">Get Started</button>
+  </div>
   <div class="container">
-    <form id="welcome">
-      <h4>Welcome to Track sugesstor</h4>
-      <button type="button" class="btn btn-primary btn-lg" id="getStart">Get Started</button>
+    <form id="questions">
+      <div class="jumbotron notshow">
+        <h4>Track Suggestor</h4>
+      </div>
+      <p class="notshow">Epicodus offers a variety of different programming tracks for students to choose from. Make the most of your Epicodus experience by using the track suggester below to help you decide which program is a good fit for you.</p>
+      <div class="form-group notshow">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="text" class="form-control" id="name">
+       </div>
+      <p class="qLable notshow">What interests you most about programming?<p>
+      <select id="interest" class="notshow">
+        <option value="interest0">Select an option</option>
+        <option value="interest1">Building Interactive web applications</option>
+        <option value="interest2">Building business software</option>
+        <option value="interest3">Content heavy websites </option>
+        <option value="interest4">Building high performance application </option>
+      </select>
+      <p class="qLable notshow">What kind of company do you see yourself working for?<p>
+      <select id="workFor" class="notshow">
+        <option value="workFor0" >Select an option</option>
+        <option value="workFor1">Startup or small business</option>
+        <option value="workFor2">Well established company</option>
+        <option value="workFor3">Agency with many customers</option>
+        <option value="workFor4">Enterprise level company</option>
+      </select>
+      <p class="qLable notshow">How do you like user interaction on websites that you like to build?<p>
+      <select id="ui" class="notshow">
+        <option value="ui0">Select an option</option>
+        <option value="ui1">High</option>
+        <option value="ui2">Medium</option>
+        <option value="ui3">Low</option>
+      </select>
+      <p class="qLable notshow">I like to learn technology which is<p>
+      <select id="learn" class="notshow">
+        <option value="learn0">Select an option</option>
+        <option value="learn1">high in demand</option>
+        <option value="learn2">capable of working with complex data structures</option>
+        <option value="learn3">easy to develop</option>
+      </select>
+      <p class="qLable notshow">Does back-end development (building the technology that makes webpages run behind the scenes) or front-end development (building the part of the web the user sees and interacts with) interest you more?<p>
+      <div class="radio notshow">
+        <label>
+          <input type="radio" name="tech" value="front">
+          Front-end
+        </label>
+      </div>
+      <div class="radio notshow">
+        <label>
+          <input type="radio" name="tech" value="back">
+          Back-end
+        </label>
+      </div>
+       <div class="form-group notshow">
+        <label for="formGroupExampleInput">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="name@gmail.com">
+       </div>
+       <button type="submit" class="btn bg-info notshow">Submit</button>
     </form>
   </div>
-  <div id="suggestor">
-    <div class="container">
-      <form id="questions">
-        <div class="jumbotron notshow">
-          <h4>Track Suggestor</h4>
-        </div>
-        <p class="notshow">Epicodus offers a variety of different programming tracks for students to choose from. Make the most of your Epicodus experience by using the track suggester below to help you decide which program is a good fit for you.</p>
-        <div class="form-group notshow">
-          <label for="formGroupExampleInput">Name</label>
-          <input type="text" class="form-control" id="name">
-         </div>
-        <p class="qLable notshow">What interests you most about programming?<p>
-        <select id="interest" class="notshow">
-          <option value="interest0">Select an option</option>
-          <option value="interest1">Building Interactive web applications</option>
-          <option value="interest2">Building business software</option>
-          <option value="interest3">Content heavy websites </option>
-          <option value="interest4">Building high performance application </option>
-        </select>
-        <p class="qLable notshow">What kind of company do you see yourself working for?<p>
-        <select id="workFor" class="notshow">
-          <option value="workFor0" >Select an option</option>
-          <option value="workFor1">Startup or small business</option>
-          <option value="workFor2">Well established company</option>
-          <option value="workFor3">Agency with many customers</option>
-          <option value="workFor4">Enterprise level company</option>
-        </select>
-        <p class="qLable notshow">How do you like user interaction on websites that you like to build?<p>
-        <select id="ui" class="notshow">
-          <option value="ui0">Select an option</option>
-          <option value="ui1">High</option>
-          <option value="ui2">Medium</option>
-          <option value="ui3">Low</option>
-        </select>
-        <p class="qLable notshow">I like to learn technology which is<p>
-        <select id="learn" class="notshow">
-          <option value="learn0">Select an option</option>
-          <option value="learn1">high in demand</option>
-          <option value="learn2">capable of working with complex data structures</option>
-          <option value="learn3">easy to develop</option>
-        </select>
-        <p class="qLable notshow">Does back-end development (building the technology that makes webpages run behind the scenes) or front-end development (building the part of the web the user sees and interacts with) interest you more?<p>
-        <div class="radio notshow">
-          <label>
-            <input type="radio" name="tech" value="front">
-            Front-end
-          </label>
-        </div>
-        <div class="radio notshow">
-          <label>
-            <input type="radio" name="tech" value="back">
-            Back-end
-          </label>
-        </div>
-         <div class="form-group notshow">
-          <label for="formGroupExampleInput">Email</label>
-          <input type="text" class="form-control" id="email" placeholder="name@gmail.com">
-         </div>
-         <button type="submit" class="btn bg-info notshow">Submit</button>
-      </form>
+  <div class="container result">
+    <div class="rubytrack notshow-result">
+      <h4><span class="username"></span>,you might be a good fit for the Ruby/Rails track. </h4>
+      <p>An email with your selection has been sent to<span class="useremail"></span>.</p>
+      <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+      <p>Check more deatils on <a href="https://www.epicodus.com/">Epicodus</a></p>
+    </div>
+    <div class="csharptrack notshow-result">
+      <h4><span class="username"></span>,you might be a good fit for the C#/.NET track. </h4>
+      <p>An email with your selection has been sent to<span class="useremail"></span>.</p>
+      <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+      <p>Check more deatils on <a href="https://www.epicodus.com/">Epicodus</a></p>
     </div>
   </div>
 </body>
