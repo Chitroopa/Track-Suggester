@@ -13,7 +13,7 @@ $(document).ready(function() {
     var learnInput = $("#learn").val();
     var techInput = $("input:radio[name=tech]:checked").val();
     var emailInput = $("#email").val();
-    alert(techInput);
+
     if ((interestInput != "interest0") && (workForInput != "workFor0") && (uiInput != "ui0") && (learnInput != "learn0") && nameInput && interestInput && workForInput && uiInput && learnInput && techInput && emailInput)
     {
       if (techInput === "front")
@@ -30,18 +30,12 @@ $(document).ready(function() {
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui2")) ||
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui3")) ||
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui3"))))
-        {
-          alert ("ruby: easy to develop");
+      {
           $(".notshow, #welcome").hide();
           $(".rubytrack, .notshow-tryagain").show();
-        }
-        else {
-          alert ("learn c#");
-          $(".notshow, #welcome").hide();
-          $(".csharptrack, .notshow-tryagain").show();
-        }
       }
-      if ((learnInput === "learn1") || (learnInput === "learn2") )
+
+      else if ((learnInput === "learn1") || (learnInput === "learn2") )
       {
         if (((interestInput === "interest2") && (workForInput === "workFor2") && (uiInput === "ui2")) ||
           ((interestInput === "interest3") && (workForInput === "workFor3") && (uiInput === "ui3")) ||
@@ -57,12 +51,31 @@ $(document).ready(function() {
           ((interestInput === "interest4") && (workForInput === "workFor4") && (uiInput === "ui3")) ||
           ((interestInput === "interest4") && (workForInput === "workFor2") && (uiInput === "ui1")))
         {
-          alert("C# high in demand")
+          $(".notshow, #welcome").hide();
+          $(".csharptrack, .notshow-tryagain").show();
         }
-
-
       }
+      }
+      if (techInput === "back")
+        {
+        if ((learnInput === "learn1") && ((interestInput != "interest1") || (interestInput != "interest2") && ((workFor != "workFor1") || (workFor != "workFor2")) && (uiInput != "ui1")))
+        {
+          $(".notshow, #welcome").hide();
+          $(".javatrack, .notshow-tryagain").show();
         }
+        // else if ((((learnInput === "learn1") || (learnInput === "learn2")) && ((interestInput != "interest1") || (interestInput != "interest2") || (interestInput != "interest4")) && ((workFor != "workFor1") || (workFor != "workFor2") || (workFor != "workFor4")) && ((uiInput != "ui1") || (uiInput != "ui3"))))
+        else
+        {
+          $(".notshow, #welcome").hide();
+          $(".phptrack, .notshow-tryagain").show();
+        }
+      }
+      else
+      {
+        $(".notshow, #welcome").hide();
+        $(".csstrack, .notshow-tryagain").show();
+      }
+    }
     else
     {
       alert("Please enter all the information");
