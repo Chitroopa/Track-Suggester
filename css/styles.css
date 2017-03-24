@@ -14,3 +14,11 @@
   margin-top: 150px;
   margin-left: 30%;
 }
+.question-page {
+  background-color: #4370b7;
+  text-align: center;
+  color: white;
+}
+.qLable {
+  font-weight: bold;
+}
