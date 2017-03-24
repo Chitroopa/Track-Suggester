@@ -33,27 +33,13 @@ $(document).ready(function() {
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui2")) ||
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui3")) ||
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui3"))))
-      // if ((learnInput != "learn2") && ((interestInput != "interest2") || (interestInput != "interest3") && ((workFor != "workFor2") || (workFor != "workFor3")) && (uiInput != "ui3")))
       {
-          $(".notshow, #welcome").hide();
-          $(".rubytrack, .notshow-tryagain").show();
+        $(".notshow, #welcome").hide();
+        $(".rubytrack, .notshow-tryagain").show();
       }
 
       else
       {
-        // if (((interestInput === "interest2") && (workForInput === "workFor2") && (uiInput === "ui2")) ||
-        //   ((interestInput === "interest3") && (workForInput === "workFor3") && (uiInput === "ui3")) ||
-        //   ((interestInput === "interest2") && (workForInput === "workFor1") && (uiInput === "ui1")) ||
-        //   ((interestInput === "interest2") && (workForInput === "workFor1") && (uiInput === "ui2")) ||
-        //   ((interestInput === "interest2") && (workForInput === "workFor1") && (uiInput === "ui3")) ||
-        //   ((interestInput === "interest2") && (workForInput === "workFor2") && (uiInput === "ui1")) ||
-        //   ((interestInput === "interest2") && (workForInput === "workFor2") && (uiInput === "ui3")) ||
-        //   ((interestInput === "interest3") && (workForInput === "workFor2") && (uiInput === "ui1")) ||
-        //   ((interestInput === "interest3") && (workForInput === "workFor3") && (uiInput === "ui1")) ||
-        //   ((interestInput === "interest4") && (workForInput === "workFor3") && (uiInput === "ui1")) ||
-        //   ((interestInput === "interest4") && (workForInput === "workFor4") && (uiInput === "ui1")) ||
-        //   ((interestInput === "interest4") && (workForInput === "workFor4") && (uiInput === "ui3")) ||
-        //   ((interestInput === "interest4") && (workForInput === "workFor2") && (uiInput === "ui1")))
         {
           $(".notshow, #welcome").hide();
           $(".csharptrack, .notshow-tryagain").show();
