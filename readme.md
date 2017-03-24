@@ -23,7 +23,7 @@ _HTML, CSS, Bootstrap, JavaScript and jQuery_
 
 ## GitHub page links
 
-http://chitroopa.github.io/Track-Suggester  
+https://chitroopa.github.io/Track-Suggester/ 
 
 ### License
 
