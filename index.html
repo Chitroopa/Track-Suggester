@@ -1,130 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script src="js/jquery-3.2.0.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Track Suggestor</title>
-</head>
-<body>
-  <div class="container" id="welcome">
-    <img src="img/epicodus.png" alt="epicodus logo" id="logo">
-    <div class="jumbotron" id="welcome-page">
-      <h4>Welcome to Track sugesstor</h4>
-      <br>
-      <br>
-      <button type="button" class="btn btn-success btn-lg" id="getStart">Get Started</button>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Track Suggestor</title>
+  </head>
+  <body>
+    <div class="container" id="welcome">
+      <img src="img/epicodus.png" alt="epicodus logo" id="logo">
+      <div class="jumbotron" id="welcome-page">
+        <h4>Welcome to Track sugesstor</h4>
+        <br>
+        <br>
+        <button type="button" class="btn btn-success btn-lg" id="getStart">Get Started</button>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <form id="questions">
-      <div class="jumbotron notshow question-page">
-        <h4>Track Suggestor</h4>
-      </div>
-      <p class="notshow">Epicodus offers a variety of different programming tracks for students to choose from. Make the most of your Epicodus experience by using the track suggester below to help you decide which program is a good fit for you.</p>
-     <div class="jumbotron notshow">
-        <div class="form-group notshow qLable">
-          <label for="formGroupExampleInput">Name</label>
-          <input type="text" class="form-control" id="name">
-         </div>
-        <p class="qLable notshow">What interests you most about programming?<p>
-        <select id="interest" class="notshow">
-          <option value="interest0">Select an option</option>
-          <option value="interest1">Building Interactive web applications</option>
-          <option value="interest2">Building business software</option>
-          <option value="interest3">Content heavy websites </option>
-          <option value="interest4">Building high performance application </option>
-        </select>
-        <p class="qLable notshow">What kind of company do you see yourself working for?<p>
-        <select id="workFor" class="notshow">
-          <option value="workFor0" >Select an option</option>
-          <option value="workFor1">Startup or small business</option>
-          <option value="workFor2">Well established company</option>
-          <option value="workFor3">Agency with many customers</option>
-          <option value="workFor4">Enterprise level company</option>
-        </select>
-        <p class="qLable notshow">How do you like user interaction on websites that you like to build?<p>
-        <select id="ui" class="notshow">
-          <option value="ui0">Select an option</option>
-          <option value="ui1">High</option>
-          <option value="ui2">Medium</option>
-          <option value="ui3">Low</option>
-        </select>
-        <p class="qLable notshow">I like to learn technology which is<p>
-        <select id="learn" class="notshow">
-          <option value="learn0">Select an option</option>
-          <option value="learn1">high in demand</option>
-          <option value="learn2">capable of working with complex data structures</option>
-          <option value="learn3">easy to develop</option>
-        </select>
-        <p class="qLable notshow">Does back-end development (building the technology that makes webpages run behind the scenes) or front-end development (building the part of the web the user sees and interacts with) interest you more?<p>
-        <div class="radio notshow">
-          <label>
-            <input type="radio" name="tech" value="front">
-            Front-end
-          </label>
+    <div class="container">
+      <form id="questions">
+        <div class="jumbotron notshow question-page">
+          <h4>Track Suggestor</h4>
         </div>
-        <div class="radio notshow">
-          <label>
-            <input type="radio" name="tech" value="back">
-            Back-end
-          </label>
+        <p class="notshow">Epicodus offers a variety of different programming tracks for students to choose from. Make the most of your Epicodus experience by using the track suggester below to help you decide which program is a good fit for you.</p>
+       <div class="jumbotron notshow">
+          <div class="form-group notshow qLable">
+            <label for="formGroupExampleInput">Name</label>
+            <input type="text" class="form-control" id="name">
+           </div>
+          <p class="qLable notshow">What interests you most about programming?<p>
+          <select id="interest" class="notshow">
+            <option value="interest0">Select an option</option>
+            <option value="interest1">Building Interactive web applications</option>
+            <option value="interest2">Building business software</option>
+            <option value="interest3">Content heavy websites </option>
+            <option value="interest4">Building high performance application </option>
+          </select>
+          <p class="qLable notshow">What kind of company do you see yourself working for?<p>
+          <select id="workFor" class="notshow">
+            <option value="workFor0" >Select an option</option>
+            <option value="workFor1">Startup or small business</option>
+            <option value="workFor2">Well established company</option>
+            <option value="workFor3">Agency with many customers</option>
+            <option value="workFor4">Enterprise level company</option>
+          </select>
+          <p class="qLable notshow">How do you like user interaction on websites that you like to build?<p>
+          <select id="ui" class="notshow">
+            <option value="ui0">Select an option</option>
+            <option value="ui1">High</option>
+            <option value="ui2">Medium</option>
+            <option value="ui3">Low</option>
+          </select>
+          <p class="qLable notshow">I like to learn technology which is<p>
+          <select id="learn" class="notshow">
+            <option value="learn0">Select an option</option>
+            <option value="learn1">high in demand</option>
+            <option value="learn2">capable of working with complex data structures</option>
+            <option value="learn3">easy to develop</option>
+          </select>
+          <p class="qLable notshow">Does back-end development (building the technology that makes webpages run behind the scenes) or front-end development (building the part of the web the user sees and interacts with) interest you more?<p>
+          <div class="radio notshow">
+            <label>
+              <input type="radio" name="tech" value="front">
+              Front-end
+            </label>
+          </div>
+          <div class="radio notshow">
+            <label>
+              <input type="radio" name="tech" value="back">
+              Back-end
+            </label>
+          </div>
+          <div class="form-group notshow qLable">
+            <label for="formGroupExampleInput">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="name@gmail.com">
+          </div>
         </div>
-        <div class="form-group notshow qLable">
-          <label for="formGroupExampleInput">Email</label>
-          <input type="text" class="form-control" id="email" placeholder="name@gmail.com">
-        </div>
-      </div>
-       <button type="submit" class="btn bg-success notshow">Submit</button>
-       <br>
-       <br>
-       <div class="jumbotorn question-page notshow">
+         <button type="submit" class="btn bg-success notshow">Submit</button>
          <br>
-       </div>
-    </form>
-  </div>
-  <div class="container result">
-     <div class="rubytrack notshow-result jumbotron">
-      <h4><span class="username"></span>,you might be a good fit for the Ruby/Rails track. </h4>
-      <br>
-      <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
-      <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
-      <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
+         <br>
+         <div class="jumbotorn question-page notshow">
+           <br>
+         </div>
+      </form>
     </div>
-    <div class="csharptrack notshow-result jumbotron">
-      <h4><span class="username"></span>,you might be a good fit for the C#/.NET track. </h4>
+    <div class="container result">
+       <div class="rubytrack notshow-result jumbotron">
+        <h4><span class="username"></span>,you might be a good fit for the Ruby/Rails track. </h4>
+        <br>
+        <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
+        <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+        <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
+      </div>
+      <div class="csharptrack notshow-result jumbotron">
+        <h4><span class="username"></span>,you might be a good fit for the C#/.NET track. </h4>
+        <br>
+        <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
+        <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+        <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
+      </div>
+      <div class="phptrack notshow-result jumbotron">
+        <h4><span class="username"></span>,you might be a good fit for the PHP/Drupal track. </h4>
+        <br>
+        <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
+        <p>PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.</p>
+        <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
+      </div>
+      <div class="javatrack notshow-result jumbotron">
+        <h4><span class="username"></span>,you might be a good fit for the Java/Android track. </h4>
+        <br>
+        <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
+        <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+        <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
+      </div>
+      <div class="csstrack notshow-result jumbotron">
+        <h4><span class="username"></span>,you might be a good fit for the CSS/Design track. </h4>
+        <br>
+        <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
+        <p>CSS is a key tool in web design.Be creative!</p>
+        <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
+      </div>
       <br>
-      <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
-      <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
-      <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
-    </div>
-    <div class="phptrack notshow-result jumbotron">
-      <h4><span class="username"></span>,you might be a good fit for the PHP/Drupal track. </h4>
       <br>
-      <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
-      <p>PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.</p>
-      <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
+      <a href="index.html" class="btn btn-primary btn-lg active bg-success notshow-tryagain" role="button" aria-pressed="true">Try again!</a>
     </div>
-    <div class="javatrack notshow-result jumbotron">
-      <h4><span class="username"></span>,you might be a good fit for the Java/Android track. </h4>
-      <br>
-      <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
-      <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
-      <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
-    </div>
-    <div class="csstrack notshow-result jumbotron">
-      <h4><span class="username"></span>,you might be a good fit for the CSS/Design track. </h4>
-      <br>
-      <p>An email with your selection has been sent to <span class="useremail"></span>.</p>
-      <p>CSS is a key tool in web design.Be creative!</p>
-      <p>Click <a href="https://www.epicodus.com/apply/">here</a> to enroll on Epicodus</p>
-    </div>
-    <br>
-    <br>
-
-    <a href="index.html" class="btn btn-primary btn-lg active bg-success notshow-tryagain" role="button" aria-pressed="true">Try again!</a>
-
-  </div>
-</body>
+  </body>
 </html>

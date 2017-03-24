@@ -33,18 +33,16 @@ $(document).ready(function() {
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui2")) ||
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui3")) ||
         ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui3"))))
-      {
-        $(".notshow, #welcome").hide();
-        $(".rubytrack, .notshow-tryagain").show();
-      }
+        {
+          $(".notshow, #welcome").hide();
+          $(".rubytrack, .notshow-tryagain").show();
+        }
 
-      else
-      {
+        else
         {
           $(".notshow, #welcome").hide();
           $(".csharptrack, .notshow-tryagain").show();
         }
-      }
       }
       else if (techInput === "back")
         {
