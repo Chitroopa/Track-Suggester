@@ -13,6 +13,9 @@ $(document).ready(function() {
     var learnInput = $("#learn").val();
     var techInput = $("input:radio[name=tech]:checked").val();
     var emailInput = $("#email").val();
+    $(".username").text(nameInput);
+    $(".useremail").text(emailInput);
+
 
     if ((interestInput != "interest0") && (workForInput != "workFor0") && (uiInput != "ui0") && (learnInput != "learn0") && nameInput && interestInput && workForInput && uiInput && learnInput && techInput && emailInput)
     {

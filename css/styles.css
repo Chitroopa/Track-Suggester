@@ -22,3 +22,12 @@
 .qLable {
   font-weight: bold;
 }
+.username, .useremail{
+  color : #4370b7;
+}
+.rubytrack, .csharptrack, .phptrack, .javatrack, {
+  text-align: center;
+}
+.notshow-tryagain {
+  margin-left: 30%;
+}
