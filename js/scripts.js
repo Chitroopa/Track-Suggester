@@ -1,7 +1,11 @@
 $(document).ready(function() {
+ $("#welcome").click(function(event) {
+   event.preventDefault();
+   $("#welcome").hide();
+   $(".notshow").show();
+ });
  $("#questions").submit(function(event) {
     event.preventDefault();
-    alert("hi");
     var nameInput = $("#name").val();
     var interestInput = $("#interest").val();
     var workForInput = $("#workFor").val();
@@ -14,13 +18,47 @@ $(document).ready(function() {
     {
       if (techInput === "front")
       {
-        alert("ruby or c#");
+        if (((learnInput === "learn3") || (learnInput === "learn2")) && (((interestInput === "interest1") && (workForInput === "workFor1") && (uiInput === "ui1")) ||
+        ((interestInput === "interest1") && (workForInput === "workFor1") && (uiInput === "ui2")) ||
+        ((interestInput === "interest1") && (workForInput === "workFor1") && (uiInput === "ui3")) ||
+        ((interestInput === "interest1") && (workForInput === "workFor2") && (uiInput === "ui1")) ||
+        ((interestInput === "interest1") && (workForInput === "workFor3") && (uiInput === "ui1")) ||
+        ((interestInput === "interest3") && (workForInput === "workFor1") && (uiInput === "ui1")) ||
+        ((interestInput === "interest3") && (workForInput === "workFor1") && (uiInput === "ui2")) ||
+        ((interestInput === "interest3") && (workForInput === "workFor1") && (uiInput === "ui3")) ||
+        ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui1")) ||
+        ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui2")) ||
+        ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui3")) ||
+        ((interestInput === "interest4") && (workForInput === "workFor1") && (uiInput === "ui3"))))
+        {
+          alert ("ruby: easy to develop");
+        }
+        else {
+          alert ("learn c#");
+        }
       }
-      else
+      if ((learnInput === "learn1") || (learnInput === "learn1") )
       {
-        alert("java php");
+        if (((interestInput === "interest2") && (workForInput === "workFor2") && (uiInput === "ui2")) ||
+          ((interestInput === "interest3") && (workForInput === "workFor3") && (uiInput === "ui3")) ||
+          ((interestInput === "interest2") && (workForInput === "workFor1") && (uiInput === "ui1")) ||
+          ((interestInput === "interest2") && (workForInput === "workFor1") && (uiInput === "ui2")) ||
+          ((interestInput === "interest2") && (workForInput === "workFor1") && (uiInput === "ui3")) ||
+          ((interestInput === "interest2") && (workForInput === "workFor2") && (uiInput === "ui1")) ||
+          ((interestInput === "interest2") && (workForInput === "workFor2") && (uiInput === "ui3")) ||
+          ((interestInput === "interest3") && (workForInput === "workFor2") && (uiInput === "ui1")) ||
+          ((interestInput === "interest3") && (workForInput === "workFor3") && (uiInput === "ui1")) ||
+          ((interestInput === "interest4") && (workForInput === "workFor3") && (uiInput === "ui1")) ||
+          ((interestInput === "interest4") && (workForInput === "workFor4") && (uiInput === "ui1")) ||
+          ((interestInput === "interest4") && (workForInput === "workFor4") && (uiInput === "ui3")) ||
+          ((interestInput === "interest4") && (workForInput === "workFor2") && (uiInput === "ui1")))
+        {
+          alert("C# high in demand")
+        }
+
+
       }
-    }
+        }
     else
     {
       alert("Please enter all the information");
