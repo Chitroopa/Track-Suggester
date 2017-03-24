@@ -33,12 +33,12 @@ $(document).ready(function() {
         {
           alert ("ruby: easy to develop");
           $(".notshow, #welcome").hide();
-          $(".rubytrack").show();
+          $(".rubytrack, .notshow-tryagain").show();
         }
         else {
           alert ("learn c#");
           $(".notshow, #welcome").hide();
-          $(".notshow-result").show();
+          $(".csharptrack, .notshow-tryagain").show();
         }
       }
       if ((learnInput === "learn1") || (learnInput === "learn2") )
